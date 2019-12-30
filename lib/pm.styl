@@ -1,0 +1,33 @@
+
+//内外边距映射
+//$gear=0,2,4,5,6,8,10,12,14,15,16,18,20,25,30
+$gear=0,5,10,15,20,25,30
+$type=a,tb,lr,t,b,l,r
+$bj=p,m
+tyformat(ty,g,iao)
+    if ty=='a'
+        {iao}:isrem(g) 
+    else if ty=='tb'
+        {iao}-top:isrem(g) 
+        {iao}-bottom:isrem(g)
+    else if ty=='lr'
+        {iao}-left:isrem(g) 
+        {iao}-right:isrem(g)
+    else if ty=='t'
+        {iao}-top:isrem(g) !important
+    else if ty=='b'
+        {iao}-bottom:isrem(g) !important
+    else if ty=='l'
+        {iao}-left:isrem(g) !important
+    else 
+        {iao}-right:isrem(g) !important
+        
+
+pm(gear=$gear,type=$type,bj=$bj)
+    .mauto
+        margin: auto
+    for iao in bj
+        for ty in type
+            for g in gear
+                .{iao}{ty}-{g}
+                    tyformat(ty,g,iao=='p'?'padding':'margin')

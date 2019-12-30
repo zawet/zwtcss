@@ -1,0 +1,137 @@
+.fz8 {
+  font-size: 0.8rem !important;
+}
+.fz9 {
+  font-size: 0.9rem !important;
+}
+.fz10 {
+  font-size: 1rem !important;
+}
+.fz12 {
+  font-size: 1.2rem !important;
+}
+.fz14 {
+  font-size: 1.4rem !important;
+}
+.fz16 {
+  font-size: 1.6rem !important;
+}
+.fz18 {
+  font-size: 1.8rem !important;
+}
+.fz20 {
+  font-size: 2rem !important;
+}
+.fz22 {
+  font-size: 2.2rem !important;
+}
+.fz24 {
+  font-size: 2.4rem !important;
+}
+.fz26 {
+  font-size: 2.6rem !important;
+}
+.fz28 {
+  font-size: 2.8rem !important;
+}
+.fz30 {
+  font-size: 3rem !important;
+}
+.fz40 {
+  font-size: 4rem !important;
+}
+.fz50 {
+  font-size: 5rem !important;
+}
+.fz60 {
+  font-size: 6rem !important;
+}
+.fw {
+  font-weight: bold !important;
+}
+.fw-n {
+  font-weight: normal !important;
+}
+/*单行文字超出显示...*/
+.dian3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*行块级变化*/
+.block {
+  display: block;
+}
+.none {
+  display: none;
+}
+.inblock {
+  display: inline-block;
+}
+/*内边距和边框算在宽高里*/
+.bs-bb {
+  box-sizing: border-box;
+}
+/*手指鼠标*/
+.cu-p {
+  cursor: pointer;
+}
+/*去除A标签下横线*/
+.ounl {
+  outline: none !important;
+}
+/*文字对齐*/
+.tl {
+  text-align: left;
+}
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
+/*浮动模型*/
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
+}
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+/* 旋转 */
+.tr180 {
+  transform: rotateZ(180deg);
+}
+.tr90 {
+  transform: rotateZ(90deg);
+}
+/* 投影 */
+.shadow-ll {
+  box-shadow: 0 3px 10px rgba(100,100,100,0.1);
+}
+.shadow-l {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.shadow-d {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+/* 高斯 */
+.blur0 {
+  filter: blur(0);
+}
+.blur1 {
+  filter: blur(1px);
+}
+.blur5 {
+  filter: blur(5px);
+}
+.blur10 {
+  filter: blur(10px);
+}

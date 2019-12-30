@@ -1,0 +1,41 @@
+$rad=2,5,10,20
+$fx=(t 2 0 0 0) (r 0 2 0 0) (b 0 0 2 0) (l 0 0 0 2) (tb 2 0 2 0) (lr 0 2 0 2)
+$brcolor=(f #ffffff) (f1 #f1f1f1) (e1 #e1e1e1) (d1 #d1d1d1) (a1 #a1a1a1) (91 #919191) (m $mColor)
+radi(rads=$rad)
+    for rs in rads
+        .brr-{rs}
+        .brr-{rs}::after
+            border-radius:isrem(rs)!important
+fxfun(fxt=$fx)
+    for fxs in fxt
+        .hb-{fxs[0]}::after
+            border-width:un(fxs[1],px) un(fxs[2],px) un(fxs[3],px) un(fxs[4],px) !important    
+brcolorfun(brc=$brcolor)
+    for bc in brc
+        .brc-{bc[0]}
+            border-color:bc[1] !important;  
+
+br()
+    .brr-y
+    .brr-y::after
+        border-radius: 50%
+    radi()
+    .br
+        position: relative
+        &::after
+            content: ""
+            pointer-events: none; /* 防止点击触发 */
+            box-sizing: border-box
+            position: absolute
+            width: 200%;
+            height: 200%
+            left: 0
+            top: 0
+            border:2px solid rgb(212, 215, 221)
+            transform: scale(0.5)
+            -webkit-transform: scale(0.5)
+            -webkit-transform-origin: 0 0
+            transform-origin: 0 0
+    fxfun()
+    .nhb,.nhb::after{ border-width: 0  !important;}
+    brcolorfun()

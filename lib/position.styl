@@ -1,0 +1,114 @@
+
+pos(tys)
+    position: tys !important;
+trbl(t,r,b,l)
+    top:t
+    right:r
+    bottom:b  
+    left:l
+$zis=(1 9) (2 99) (3 999) (4 9999) (5 99999)
+zind(zi=$zis)
+    for z in zi
+        .z-i{z[0]}
+            z-index: z[1] !important;   
+
+
+po()
+    /*
+    定位图
+    ----------    -----------                         ----------    -----------
+    | out-tl |    | out-tl2 |                         | out-tr |    | out-tr2 |
+    ----------    -----------                         ----------    -----------
+                ——————————————————————————————————————————————————— 
+    ----------  |  -----------                        ----------  |  -----------
+    | out-tl3 | | |   in-tl  |                        |  in-tr  | | |  out-tr3  |
+    ----------  |  -----------                        ----------  |  -----------     
+                |                   -----------                   |
+                |                   |   in-c  |                   |
+                |                   -----------                   |
+                |                                                 |
+    ----------  |  -----------                        ----------  |  ----------- 
+    | out-bl  | | |   in-bl  |                        | in-br   | | |   out-br  |
+    ----------  |  -----------                        ----------  |  -----------
+                ———————————————————————————————————————————————————  
+    ----------    -----------                         ----------    -----------
+    | out-bl2 |    | out-bl3 |                        | out-br2 |   | out-br3 |
+    ----------    -----------                         ----------    -----------
+
+    html调用演示
+    <div class="po-r wh16 ba-03">
+        <div class="w4 po-ab  ma-2  out-tl ba-f9 co-6">out-tl</div>
+        <div class="w4 po-ab  ma-2  out-tl2 ba-f9 co-6">out-tl2</div>
+        <div class="w4 po-ab  ma-2  out-tl3 ba-f9 co-6">out-tl3</div>
+        <div class="w4 po-ab  ma-2  in-tl ba-f9 co-6">in-tl</div>
+
+        <div class="w4 po-ab  ma-2  out-tr ba-f9 co-6">out-tr</div>
+        <div class="w4 po-ab  ma-2  out-tr2 ba-f9 co-6">out-tr2</div>
+        <div class="w4 po-ab  ma-2  out-tr3 ba-f9 co-6">out-tr3</div>
+        <div class="w4 po-ab  ma-2  in-tr ba-f9 co-6">in-tr</div>
+
+        <div class="w4 po-ab  ma-2  out-bl ba-f9 co-6">out-bl</div>
+        <div class="w4 po-ab  ma-2  out-bl2 ba-f9 co-6">out-bl2</div>
+        <div class="w4 po-ab  ma-2  out-bl3 ba-f9 co-6">out-bl3</div>
+        <div class="w4 po-ab  ma-2  in-bl ba-f9 co-6">in-bl</div>
+
+        <div class="w4 po-ab  ma-2  out-br ba-f9 co-6">out-br</div>
+        <div class="w4 po-ab  ma-2  out-br2 ba-f9 co-6">out-br2</div>
+        <div class="w4 po-ab  ma-2  out-br3 ba-f9 co-6">out-br3</div>
+        <div class="w4 po-ab  ma-2  in-br ba-f9 co-6">in-br</div>
+    </div>
+    */
+    .po-r
+        pos(relative)
+    .po-ab
+        pos(absolute)
+    .po-fix
+        pos(fixed)
+
+    .in-tl
+        trbl(0,auto,auto,0)
+    .in-tr
+        trbl(0,0,auto,auto)
+    .in-bl
+        trbl(auto,auto,0,0)
+    .in-br
+        trbl(auto,0,0,auto)
+    .out-tl
+        trbl(auto,100%,100%,auto)
+    .out-tl2
+        trbl(auto,auto,100%,0)
+    .out-tl3
+        trbl(0,100%,auto,auto)
+    .out-tr
+        trbl(auto,0,100%,auto)
+    .out-tr2
+        trbl(auto,auto,100%,100%)
+    .out-tr3
+        trbl(0,auto,auto,100%)
+    .out-bl
+        trbl(auto,100%,0,auto)
+    .out-bl2
+        trbl(100%,100%,auto,auto)
+    .out-bl3
+        trbl(100%,auto,auto,0)
+    .out-br
+        trbl(auto,auto,0,100%)
+    .out-br2
+        trbl(100%,0,auto,auto)
+    .out-br3
+        trbl(100%,auto,auto,100%)
+    .in-c
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+    .in-lc
+        /*高度固定，水平居中*/
+        left: 50% !important
+        transform: translateX(-50%)
+         
+    .in-vc
+        /*宽度固定，垂直居中*/
+        top: 50% !important
+        transform: translateY(-50%)
+    /*层级*/
+    zind()

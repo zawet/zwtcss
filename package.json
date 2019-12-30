@@ -1,0 +1,18 @@
+{
+  "name": "zwtcss",
+  "version": "1.0.1",
+  "description": "预备css样式",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "stylint": "^2.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "all":"concurrently \"stylus  zwtcss.styl -o dist\" \"stylus  styl/zc_pm.styl -o dist\" \"stylus  styl/zc_br.styl -o dist\" \"stylus  styl/zc_fz.styl -o dist\" \"stylus  styl/zc_po.styl -o dist\" \"stylus  styl/zc_wh.styl -o dist\" \"stylus  styl/zc_box.styl -o dist\" \"stylus  styl/zc_color.styl -o dist\""
+  },
+  "author": "zawet",
+  "license": "ISC"
+}

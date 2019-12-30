@@ -1,0 +1,26 @@
+$colorType=m,s,er,b,y,g,f,mbg
+$colorValue=$mColor,$sColor,$erColor,$blue,$yellow,$green,#fff,$mbg
+$firstField=co,ba
+$ccs = (1 #111) (3 #333) (5 #535353) (6 #666) (7 #777) (9 #999) (a #aaa) (d #ddd) (f9 #f9f9f9) (f6 #f6f6f6) (f3 #f3f3f3) (f1 #f1f1f1)
+$bcs = (fa #fafafa) (f9 #f9f9f9) (f6 #f6f6f6) (f3 #f3f3f3) (f1 #f1f1f1) (e #eee) (e1 #e1e2e9)
+ 
+colors(ct=$colorType,ffs=$firstField,cv=$colorValue)
+    for fs in ffs
+        for ty,i in ct
+            .{fs}-{ty}
+                {fs=='co'?color:background} : cv[i]
+
+co()
+    colors() 
+    colors(keys($ccs),co,values($ccs)) 
+    colors(keys($bcs),ba,values($bcs))
+    .cli-m{background-image: -webkit-linear-gradient(3deg,#2667ec,#19acee);-webkit-background-clip: text;color: transparent;}/* 文字主渐变颜色 */
+    .cli-s{background-image: -webkit-linear-gradient(3deg,#ecad08,#fd600a);-webkit-background-clip: text;color: transparent;}/* 文字辅渐变颜色 */
+    .cli-g{background-image: -webkit-linear-gradient(3deg,#11998e,#38ef7d);-webkit-background-clip: text;color: transparent;}/* 文字辅渐变颜色 */
+    .bli-m{ background:linear-gradient(3deg,#2667ec,#19acee)  !important;}/* 背景主渐变颜色 */
+    .bli-md{ background:linear-gradient(3deg,#1951c0,#0c7caf)  !important;}/* 背景辅渐变颜色 */
+    .bli-s{ background:linear-gradient(3deg,#ecad08,#fd600a)  !important;}/* 背景辅渐变颜色 */
+    .bli-g{ background:linear-gradient(33deg,#11998e,#25d66f)  !important;}/* 背景辅渐变颜色 */
+
+ 
+         

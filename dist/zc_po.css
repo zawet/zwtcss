@@ -1,0 +1,180 @@
+/*
+    定位图
+    ----------    -----------                         ----------    -----------
+    | out-tl |    | out-tl2 |                         | out-tr |    | out-tr2 |
+    ----------    -----------                         ----------    -----------
+                ——————————————————————————————————————————————————— 
+    ----------  |  -----------                        ----------  |  -----------
+    | out-tl3 | | |   in-tl  |                        |  in-tr  | | |  out-tr3  |
+    ----------  |  -----------                        ----------  |  -----------     
+                |                   -----------                   |
+                |                   |   in-c  |                   |
+                |                   -----------                   |
+                |                                                 |
+    ----------  |  -----------                        ----------  |  ----------- 
+    | out-bl  | | |   in-bl  |                        | in-br   | | |   out-br  |
+    ----------  |  -----------                        ----------  |  -----------
+                ———————————————————————————————————————————————————  
+    ----------    -----------                         ----------    -----------
+    | out-bl2 |    | out-bl3 |                        | out-br2 |   | out-br3 |
+    ----------    -----------                         ----------    -----------
+
+    html调用演示
+    <div class="po-r wh16 ba-03">
+        <div class="w4 po-ab  ma-2  out-tl ba-f9 co-6">out-tl</div>
+        <div class="w4 po-ab  ma-2  out-tl2 ba-f9 co-6">out-tl2</div>
+        <div class="w4 po-ab  ma-2  out-tl3 ba-f9 co-6">out-tl3</div>
+        <div class="w4 po-ab  ma-2  in-tl ba-f9 co-6">in-tl</div>
+
+        <div class="w4 po-ab  ma-2  out-tr ba-f9 co-6">out-tr</div>
+        <div class="w4 po-ab  ma-2  out-tr2 ba-f9 co-6">out-tr2</div>
+        <div class="w4 po-ab  ma-2  out-tr3 ba-f9 co-6">out-tr3</div>
+        <div class="w4 po-ab  ma-2  in-tr ba-f9 co-6">in-tr</div>
+
+        <div class="w4 po-ab  ma-2  out-bl ba-f9 co-6">out-bl</div>
+        <div class="w4 po-ab  ma-2  out-bl2 ba-f9 co-6">out-bl2</div>
+        <div class="w4 po-ab  ma-2  out-bl3 ba-f9 co-6">out-bl3</div>
+        <div class="w4 po-ab  ma-2  in-bl ba-f9 co-6">in-bl</div>
+
+        <div class="w4 po-ab  ma-2  out-br ba-f9 co-6">out-br</div>
+        <div class="w4 po-ab  ma-2  out-br2 ba-f9 co-6">out-br2</div>
+        <div class="w4 po-ab  ma-2  out-br3 ba-f9 co-6">out-br3</div>
+        <div class="w4 po-ab  ma-2  in-br ba-f9 co-6">in-br</div>
+    </div>
+    */
+.po-r {
+  position: relative !important;
+}
+.po-ab {
+  position: absolute !important;
+}
+.po-fix {
+  position: fixed !important;
+}
+.in-tl {
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+.in-tr {
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+.in-bl {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+}
+.in-br {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+}
+.out-tl {
+  top: auto;
+  right: 100%;
+  bottom: 100%;
+  left: auto;
+}
+.out-tl2 {
+  top: auto;
+  right: auto;
+  bottom: 100%;
+  left: 0;
+}
+.out-tl3 {
+  top: 0;
+  right: 100%;
+  bottom: auto;
+  left: auto;
+}
+.out-tr {
+  top: auto;
+  right: 0;
+  bottom: 100%;
+  left: auto;
+}
+.out-tr2 {
+  top: auto;
+  right: auto;
+  bottom: 100%;
+  left: 100%;
+}
+.out-tr3 {
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 100%;
+}
+.out-bl {
+  top: auto;
+  right: 100%;
+  bottom: 0;
+  left: auto;
+}
+.out-bl2 {
+  top: 100%;
+  right: 100%;
+  bottom: auto;
+  left: auto;
+}
+.out-bl3 {
+  top: 100%;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+.out-br {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 100%;
+}
+.out-br2 {
+  top: 100%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+.out-br3 {
+  top: 100%;
+  right: auto;
+  bottom: auto;
+  left: 100%;
+}
+.in-c {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.in-lc {
+/*高度固定，水平居中*/
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+.in-vc {
+/*宽度固定，垂直居中*/
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+/*层级*/
+.z-i1 {
+  z-index: 9 !important;
+}
+.z-i2 {
+  z-index: 99 !important;
+}
+.z-i3 {
+  z-index: 999 !important;
+}
+.z-i4 {
+  z-index: 9999 !important;
+}
+.z-i5 {
+  z-index: 99999 !important;
+}

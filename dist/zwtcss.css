@@ -1,0 +1,1192 @@
+/**********盒子布局模型*/
+.box {
+/*盒子模型*/
+/*默认横排*/
+  display: -webkit-flex !important;
+  display: flex !important;
+  position: relative;
+}
+.box-col {
+/*竖排*/
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.box-wp {
+/*超出换行*/
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.box-ac {
+/*垂直居中对齐 */
+  -webkit-align-items: center;
+  align-items: center;
+}
+.box-ae {
+/*垂直下对齐 */
+  -webkit-align-items: end;
+  align-items: end;
+}
+.box-jc {
+/*居中对齐 */
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.box-je {
+/*右对齐 */
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.box-jsb {
+/*左右对齐 */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.box-jsa {
+/*左右居中对齐*/
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.box-f1 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.box-f2 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 2;
+  flex: 2;
+}
+.box-f3 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 3;
+  flex: 3;
+}
+.box-f4 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 4;
+  flex: 4;
+}
+.box-f5 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 5;
+  flex: 5;
+}
+.box-f6 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 6;
+  flex: 6;
+}
+/**********内外边距快速预设*/
+.mauto {
+  margin: auto;
+}
+.pa-0 {
+  margin: 0;
+}
+.pa-5 {
+  margin: 0.5rem;
+}
+.pa-10 {
+  margin: 1rem;
+}
+.pa-15 {
+  margin: 1.5rem;
+}
+.pa-20 {
+  margin: 2rem;
+}
+.pa-25 {
+  margin: 2.5rem;
+}
+.pa-30 {
+  margin: 3rem;
+}
+.ptb-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ptb-5 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.ptb-10 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.ptb-15 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.ptb-20 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.ptb-25 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.ptb-30 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.plr-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+.plr-5 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.plr-10 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.plr-15 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.plr-20 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.plr-25 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.plr-30 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.pt-0 {
+  margin-top: 0 !important;
+}
+.pt-5 {
+  margin-top: 0.5rem !important;
+}
+.pt-10 {
+  margin-top: 1rem !important;
+}
+.pt-15 {
+  margin-top: 1.5rem !important;
+}
+.pt-20 {
+  margin-top: 2rem !important;
+}
+.pt-25 {
+  margin-top: 2.5rem !important;
+}
+.pt-30 {
+  margin-top: 3rem !important;
+}
+.pb-0 {
+  margin-bottom: 0 !important;
+}
+.pb-5 {
+  margin-bottom: 0.5rem !important;
+}
+.pb-10 {
+  margin-bottom: 1rem !important;
+}
+.pb-15 {
+  margin-bottom: 1.5rem !important;
+}
+.pb-20 {
+  margin-bottom: 2rem !important;
+}
+.pb-25 {
+  margin-bottom: 2.5rem !important;
+}
+.pb-30 {
+  margin-bottom: 3rem !important;
+}
+.pl-0 {
+  margin-left: 0 !important;
+}
+.pl-5 {
+  margin-left: 0.5rem !important;
+}
+.pl-10 {
+  margin-left: 1rem !important;
+}
+.pl-15 {
+  margin-left: 1.5rem !important;
+}
+.pl-20 {
+  margin-left: 2rem !important;
+}
+.pl-25 {
+  margin-left: 2.5rem !important;
+}
+.pl-30 {
+  margin-left: 3rem !important;
+}
+.pr-0 {
+  margin-right: 0 !important;
+}
+.pr-5 {
+  margin-right: 0.5rem !important;
+}
+.pr-10 {
+  margin-right: 1rem !important;
+}
+.pr-15 {
+  margin-right: 1.5rem !important;
+}
+.pr-20 {
+  margin-right: 2rem !important;
+}
+.pr-25 {
+  margin-right: 2.5rem !important;
+}
+.pr-30 {
+  margin-right: 3rem !important;
+}
+.ma-0 {
+  margin: 0;
+}
+.ma-5 {
+  margin: 0.5rem;
+}
+.ma-10 {
+  margin: 1rem;
+}
+.ma-15 {
+  margin: 1.5rem;
+}
+.ma-20 {
+  margin: 2rem;
+}
+.ma-25 {
+  margin: 2.5rem;
+}
+.ma-30 {
+  margin: 3rem;
+}
+.mtb-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.mtb-5 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.mtb-10 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mtb-15 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.mtb-20 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.mtb-25 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.mtb-30 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.mlr-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+.mlr-5 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.mlr-10 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mlr-15 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.mlr-20 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.mlr-25 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.mlr-30 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mt-5 {
+  margin-top: 0.5rem !important;
+}
+.mt-10 {
+  margin-top: 1rem !important;
+}
+.mt-15 {
+  margin-top: 1.5rem !important;
+}
+.mt-20 {
+  margin-top: 2rem !important;
+}
+.mt-25 {
+  margin-top: 2.5rem !important;
+}
+.mt-30 {
+  margin-top: 3rem !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-5 {
+  margin-bottom: 0.5rem !important;
+}
+.mb-10 {
+  margin-bottom: 1rem !important;
+}
+.mb-15 {
+  margin-bottom: 1.5rem !important;
+}
+.mb-20 {
+  margin-bottom: 2rem !important;
+}
+.mb-25 {
+  margin-bottom: 2.5rem !important;
+}
+.mb-30 {
+  margin-bottom: 3rem !important;
+}
+.ml-0 {
+  margin-left: 0 !important;
+}
+.ml-5 {
+  margin-left: 0.5rem !important;
+}
+.ml-10 {
+  margin-left: 1rem !important;
+}
+.ml-15 {
+  margin-left: 1.5rem !important;
+}
+.ml-20 {
+  margin-left: 2rem !important;
+}
+.ml-25 {
+  margin-left: 2.5rem !important;
+}
+.ml-30 {
+  margin-left: 3rem !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+.mr-5 {
+  margin-right: 0.5rem !important;
+}
+.mr-10 {
+  margin-right: 1rem !important;
+}
+.mr-15 {
+  margin-right: 1.5rem !important;
+}
+.mr-20 {
+  margin-right: 2rem !important;
+}
+.mr-25 {
+  margin-right: 2.5rem !important;
+}
+.mr-30 {
+  margin-right: 3rem !important;
+}
+/**********背景颜色和字体颜色快速预设*/
+.co-m {
+  background: #19acee /* 主颜色 */;
+}
+.co-s {
+  background: #2667ec /* 辅颜色 */;
+}
+.co-er {
+  background: #eb3a04 /* 错误颜色 */;
+}
+.co-b {
+  background: #1babee /* 蓝调 */;
+}
+.co-y {
+  background: #ff8a00 /* 黄调 */;
+}
+.co-g {
+  background: #11998e /* 绿调 */;
+}
+.co-f {
+  background: #fff;
+}
+.co-mbg {
+  background: #f2f3f4 /* 背景底色 */;
+}
+.ba-m {
+  background: #19acee /* 主颜色 */;
+}
+.ba-s {
+  background: #2667ec /* 辅颜色 */;
+}
+.ba-er {
+  background: #eb3a04 /* 错误颜色 */;
+}
+.ba-b {
+  background: #1babee /* 蓝调 */;
+}
+.ba-y {
+  background: #ff8a00 /* 黄调 */;
+}
+.ba-g {
+  background: #11998e /* 绿调 */;
+}
+.ba-f {
+  background: #fff;
+}
+.ba-mbg {
+  background: #f2f3f4 /* 背景底色 */;
+}
+.co-1 {
+  background: #111;
+}
+.co-3 {
+  background: #333;
+}
+.co-5 {
+  background: #535353;
+}
+.co-6 {
+  background: #666;
+}
+.co-7 {
+  background: #777;
+}
+.co-9 {
+  background: #999;
+}
+.co-a {
+  background: #aaa;
+}
+.co-d {
+  background: #ddd;
+}
+.co-f9 {
+  background: #f9f9f9;
+}
+.co-f6 {
+  background: #f6f6f6;
+}
+.co-f3 {
+  background: #f3f3f3;
+}
+.co-f1 {
+  background: #f1f1f1;
+}
+.ba-fa {
+  background: #fafafa;
+}
+.ba-f9 {
+  background: #f9f9f9;
+}
+.ba-f6 {
+  background: #f6f6f6;
+}
+.ba-f3 {
+  background: #f3f3f3;
+}
+.ba-f1 {
+  background: #f1f1f1;
+}
+.ba-e {
+  background: #eee;
+}
+.ba-e1 {
+  background: #e1e2e9;
+}
+.cli-m {
+  background-image: -webkit-linear-gradient(3deg, #2667ec, #19acee);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* 文字主渐变颜色 */
+.cli-s {
+  background-image: -webkit-linear-gradient(3deg, #ecad08, #fd600a);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* 文字辅渐变颜色 */
+.cli-g {
+  background-image: -webkit-linear-gradient(3deg, #11998e, #38ef7d);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* 文字辅渐变颜色 */
+.bli-m {
+  background: linear-gradient(3deg, #2667ec, #19acee) !important;
+}
+/* 背景主渐变颜色 */
+.bli-md {
+  background: linear-gradient(3deg, #1951c0, #0c7caf) !important;
+}
+/* 背景辅渐变颜色 */
+.bli-s {
+  background: linear-gradient(3deg, #ecad08, #fd600a) !important;
+}
+/* 背景辅渐变颜色 */
+.bli-g {
+  background: linear-gradient(33deg, #11998e, #25d66f) !important;
+}
+/* 背景辅渐变颜色 */
+/**********文本相关样式快速预设*/
+.fz8 {
+  font-size: 0.8rem !important;
+}
+.fz9 {
+  font-size: 0.9rem !important;
+}
+.fz10 {
+  font-size: 1rem !important;
+}
+.fz12 {
+  font-size: 1.2rem !important;
+}
+.fz14 {
+  font-size: 1.4rem !important;
+}
+.fz16 {
+  font-size: 1.6rem !important;
+}
+.fz18 {
+  font-size: 1.8rem !important;
+}
+.fz20 {
+  font-size: 2rem !important;
+}
+.fz22 {
+  font-size: 2.2rem !important;
+}
+.fz24 {
+  font-size: 2.4rem !important;
+}
+.fz26 {
+  font-size: 2.6rem !important;
+}
+.fz28 {
+  font-size: 2.8rem !important;
+}
+.fz30 {
+  font-size: 3rem !important;
+}
+.fz40 {
+  font-size: 4rem !important;
+}
+.fz50 {
+  font-size: 5rem !important;
+}
+.fz60 {
+  font-size: 6rem !important;
+}
+.fw {
+  font-weight: bold !important;
+}
+.fw-n {
+  font-weight: normal !important;
+}
+/*单行文字超出显示...*/
+.dian3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*行块级变化*/
+.block {
+  display: block;
+}
+.none {
+  display: none;
+}
+.inblock {
+  display: inline-block;
+}
+/*内边距和边框算在宽高里*/
+.bs-bb {
+  box-sizing: border-box;
+}
+/*手指鼠标*/
+.cu-p {
+  cursor: pointer;
+}
+/*去除A标签下横线*/
+.ounl {
+  outline: none !important;
+}
+/*文字对齐*/
+.tl {
+  text-align: left;
+}
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
+/*浮动模型*/
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
+}
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+/* 旋转 */
+.tr180 {
+  transform: rotateZ(180deg);
+}
+.tr90 {
+  transform: rotateZ(90deg);
+}
+/* 投影 */
+.shadow-ll {
+  box-shadow: 0 3px 10px rgba(100,100,100,0.1);
+}
+.shadow-l {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.shadow-d {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+/* 高斯 */
+.blur0 {
+  filter: blur(0);
+}
+.blur1 {
+  filter: blur(1px);
+}
+.blur5 {
+  filter: blur(5px);
+}
+.blur10 {
+  filter: blur(10px);
+}
+/**********边框相关快速预设*/
+.brr-y,
+.brr-y::after {
+  border-radius: 50%;
+}
+.brr-2,
+.brr-2::after {
+  border-radius: 0.2rem !important;
+}
+.brr-5,
+.brr-5::after {
+  border-radius: 0.5rem !important;
+}
+.brr-10,
+.brr-10::after {
+  border-radius: 1rem !important;
+}
+.brr-20,
+.brr-20::after {
+  border-radius: 2rem !important;
+}
+.br {
+  position: relative;
+}
+.br::after {
+  content: "";
+  pointer-events: none; /* 防止点击触发 */
+  box-sizing: border-box;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  left: 0;
+  top: 0;
+  border: 2px solid #d4d7dd;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.hb-t::after {
+  border-width: 2px 0 0 0 !important;
+}
+.hb-r::after {
+  border-width: 0 2px 0 0 !important;
+}
+.hb-b::after {
+  border-width: 0 0 2px 0 !important;
+}
+.hb-l::after {
+  border-width: 0 0 0 2px !important;
+}
+.hb-tb::after {
+  border-width: 2px 0 2px 0 !important;
+}
+.hb-lr::after {
+  border-width: 0 2px 0 2px !important;
+}
+.nhb,
+.nhb::after {
+  border-width: 0 !important;
+}
+.brc-f {
+  border-color: #fff !important;
+}
+.brc-f1 {
+  border-color: #f1f1f1 !important;
+}
+.brc-e1 {
+  border-color: #e1e1e1 !important;
+}
+.brc-d1 {
+  border-color: #d1d1d1 !important;
+}
+.brc-a1 {
+  border-color: #a1a1a1 !important;
+}
+.brc-91 {
+  border-color: #919191 !important;
+}
+.brc-m {
+  border-color: #19acee /* 主颜色 */ !important;
+}
+/**********文宽高相关样式快速预设*/
+.w10 {
+  width: 10% !important;
+}
+.w15 {
+  width: 15% !important;
+}
+.w20 {
+  width: 20% !important;
+}
+.w25 {
+  width: 25% !important;
+}
+.w28 {
+  width: 28% !important;
+}
+.w30 {
+  width: 30% !important;
+}
+.w31 {
+  width: 31% !important;
+}
+.w32 {
+  width: 32% !important;
+}
+.w33 {
+  width: 33% !important;
+}
+.w40 {
+  width: 40% !important;
+}
+.w50 {
+  width: 50% !important;
+}
+.w60 {
+  width: 60% !important;
+}
+.w70 {
+  width: 70% !important;
+}
+.w80 {
+  width: 80% !important;
+}
+.w90 {
+  width: 90% !important;
+}
+.w100 {
+  width: 100% !important;
+}
+.w1 {
+  width: 1.2rem !important;
+}
+.w2 {
+  width: 2rem !important;
+}
+.w3 {
+  width: 3rem !important;
+}
+.w4 {
+  width: 4rem !important;
+}
+.w5 {
+  width: 5rem !important;
+}
+.w6 {
+  width: 6rem !important;
+}
+.w7 {
+  width: 7rem !important;
+}
+.w8 {
+  width: 8rem !important;
+}
+.h5 {
+  height: 5rem !important;
+}
+.h10 {
+  height: 10rem !important;
+}
+.h15 {
+  height: 15rem !important;
+}
+.h20 {
+  height: 20rem !important;
+}
+.h30 {
+  height: 30rem !important;
+}
+.h40 {
+  height: 40rem !important;
+}
+.h50 {
+  height: 50rem !important;
+}
+/*正方形 搭配brr-y使用可以变成圆形*/
+.wh1 {
+  width: 1rem !important;
+  height: 1rem !important;
+}
+.wh2 {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+.wh24 {
+  width: 2.4rem !important;
+  height: 2.4rem !important;
+}
+.wh3 {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+.wh4 {
+  width: 4rem !important;
+  height: 4rem !important;
+}
+.wh6 {
+  width: 6rem !important;
+  height: 6rem !important;
+}
+.wh7 {
+  width: 7rem !important;
+  height: 7rem !important;
+}
+.wh8 {
+  width: 8rem !important;
+  height: 8rem !important;
+}
+.wh16 {
+  width: 16rem !important;
+  height: 16rem !important;
+}
+.lh2 {
+  line-height: 2rem;
+}
+.lh24 {
+  line-height: 2.4rem;
+}
+.lh30 {
+  line-height: 30px;
+}
+.lh32 {
+  line-height: 32px;
+}
+.lh34 {
+  line-height: 34px;
+}
+.lh3 {
+  line-height: 3rem;
+}
+.lh4 {
+  line-height: 4rem;
+}
+.mw100 {
+  min-width: 100% !important;
+}
+.mh100 {
+  min-height: 100% !important;
+}
+.wh100 {
+  width: 100% !important;
+  height: 100% !important;
+}
+.h100 {
+  height: 100% !important;
+}
+.minw {
+  min-width: 5rem;
+}
+/*滚动快速订制 （适合pc端，移动端忌用） 可以快速制作隐藏滚动条的可以滚动的div*/
+.ov-nogun {
+  width: 120%;
+  padding-right: 20%;
+}
+.ov-y {
+  overflow-y: auto !important;
+  overflow-x: hidden;
+}
+.ov-x {
+  overflow-x: auto !important;
+  overflow-y: hidden;
+}
+.ov-no {
+  overflow: hidden !important;
+}
+/* 快速生成 16:9 4:3 20:9 长方形 子元素全需要绝对定位 就是子元素都需要有个样式为 class= "wh-cb" 的div包着，不然会跑出去*/
+/* 例如结构为
+    <div class="wh-16bi9">
+    <div class="wh-cb">...</div>
+    </div>
+    */
+.wh-16bi9 {
+  width: 100%;
+  padding-bottom: 57%;
+  position: relative;
+}
+.wh-4bi3 {
+  width: 100%;
+  padding-bottom: 75%;
+  position: relative;
+}
+.wh-20bi9 {
+  width: 100%;
+  padding-bottom: 45%;
+  position: relative;
+}
+.wh-9bi16 {
+  width: 100%;
+  padding-bottom: 178%;
+  position: relative;
+}
+.wh-3bi4 {
+  width: 100%;
+  padding-bottom: 134%;
+  position: relative;
+}
+.wh-9bi20 {
+  width: 100%;
+  padding-bottom: 223%;
+  position: relative;
+}
+/*1:1 任何宽度无js正方形 搭配brr-y使用可以变成圆形*/
+/* wh-square父类的宽度决定圆大小 
+    dom结构为
+    <div class="wh-square brr-y">
+        <div class="wh-cb">...</div>
+    </div>
+    */
+.wh-square {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+/*第一子元素*/
+.wh-cb {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+}
+/**********定位相关样式快速预设*/
+/*
+    定位图
+    ----------    -----------                         ----------    -----------
+    | out-tl |    | out-tl2 |                         | out-tr |    | out-tr2 |
+    ----------    -----------                         ----------    -----------
+                ——————————————————————————————————————————————————— 
+    ----------  |  -----------                        ----------  |  -----------
+    | out-tl3 | | |   in-tl  |                        |  in-tr  | | |  out-tr3  |
+    ----------  |  -----------                        ----------  |  -----------     
+                |                   -----------                   |
+                |                   |   in-c  |                   |
+                |                   -----------                   |
+                |                                                 |
+    ----------  |  -----------                        ----------  |  ----------- 
+    | out-bl  | | |   in-bl  |                        | in-br   | | |   out-br  |
+    ----------  |  -----------                        ----------  |  -----------
+                ———————————————————————————————————————————————————  
+    ----------    -----------                         ----------    -----------
+    | out-bl2 |    | out-bl3 |                        | out-br2 |   | out-br3 |
+    ----------    -----------                         ----------    -----------
+
+    html调用演示
+    <div class="po-r wh16 ba-03">
+        <div class="w4 po-ab  ma-2  out-tl ba-f9 co-6">out-tl</div>
+        <div class="w4 po-ab  ma-2  out-tl2 ba-f9 co-6">out-tl2</div>
+        <div class="w4 po-ab  ma-2  out-tl3 ba-f9 co-6">out-tl3</div>
+        <div class="w4 po-ab  ma-2  in-tl ba-f9 co-6">in-tl</div>
+
+        <div class="w4 po-ab  ma-2  out-tr ba-f9 co-6">out-tr</div>
+        <div class="w4 po-ab  ma-2  out-tr2 ba-f9 co-6">out-tr2</div>
+        <div class="w4 po-ab  ma-2  out-tr3 ba-f9 co-6">out-tr3</div>
+        <div class="w4 po-ab  ma-2  in-tr ba-f9 co-6">in-tr</div>
+
+        <div class="w4 po-ab  ma-2  out-bl ba-f9 co-6">out-bl</div>
+        <div class="w4 po-ab  ma-2  out-bl2 ba-f9 co-6">out-bl2</div>
+        <div class="w4 po-ab  ma-2  out-bl3 ba-f9 co-6">out-bl3</div>
+        <div class="w4 po-ab  ma-2  in-bl ba-f9 co-6">in-bl</div>
+
+        <div class="w4 po-ab  ma-2  out-br ba-f9 co-6">out-br</div>
+        <div class="w4 po-ab  ma-2  out-br2 ba-f9 co-6">out-br2</div>
+        <div class="w4 po-ab  ma-2  out-br3 ba-f9 co-6">out-br3</div>
+        <div class="w4 po-ab  ma-2  in-br ba-f9 co-6">in-br</div>
+    </div>
+    */
+.po-r {
+  position: relative !important;
+}
+.po-ab {
+  position: absolute !important;
+}
+.po-fix {
+  position: fixed !important;
+}
+.in-tl {
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+.in-tr {
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+.in-bl {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+}
+.in-br {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+}
+.out-tl {
+  top: auto;
+  right: 100%;
+  bottom: 100%;
+  left: auto;
+}
+.out-tl2 {
+  top: auto;
+  right: auto;
+  bottom: 100%;
+  left: 0;
+}
+.out-tl3 {
+  top: 0;
+  right: 100%;
+  bottom: auto;
+  left: auto;
+}
+.out-tr {
+  top: auto;
+  right: 0;
+  bottom: 100%;
+  left: auto;
+}
+.out-tr2 {
+  top: auto;
+  right: auto;
+  bottom: 100%;
+  left: 100%;
+}
+.out-tr3 {
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 100%;
+}
+.out-bl {
+  top: auto;
+  right: 100%;
+  bottom: 0;
+  left: auto;
+}
+.out-bl2 {
+  top: 100%;
+  right: 100%;
+  bottom: auto;
+  left: auto;
+}
+.out-bl3 {
+  top: 100%;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+.out-br {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 100%;
+}
+.out-br2 {
+  top: 100%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+.out-br3 {
+  top: 100%;
+  right: auto;
+  bottom: auto;
+  left: 100%;
+}
+.in-c {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.in-lc {
+/*高度固定，水平居中*/
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+.in-vc {
+/*宽度固定，垂直居中*/
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+/*层级*/
+.z-i1 {
+  z-index: 9 !important;
+}
+.z-i2 {
+  z-index: 99 !important;
+}
+.z-i3 {
+  z-index: 999 !important;
+}
+.z-i4 {
+  z-index: 9999 !important;
+}
+.z-i5 {
+  z-index: 99999 !important;
+}

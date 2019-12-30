@@ -1,0 +1,81 @@
+.brr-y,
+.brr-y::after {
+  border-radius: 50%;
+}
+.brr-2,
+.brr-2::after {
+  border-radius: 0.2rem !important;
+}
+.brr-5,
+.brr-5::after {
+  border-radius: 0.5rem !important;
+}
+.brr-10,
+.brr-10::after {
+  border-radius: 1rem !important;
+}
+.brr-20,
+.brr-20::after {
+  border-radius: 2rem !important;
+}
+.br {
+  position: relative;
+}
+.br::after {
+  content: "";
+  pointer-events: none; /* 防止点击触发 */
+  box-sizing: border-box;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  left: 0;
+  top: 0;
+  border: 2px solid #d4d7dd;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.hb-t::after {
+  border-width: 2px 0 0 0 !important;
+}
+.hb-r::after {
+  border-width: 0 2px 0 0 !important;
+}
+.hb-b::after {
+  border-width: 0 0 2px 0 !important;
+}
+.hb-l::after {
+  border-width: 0 0 0 2px !important;
+}
+.hb-tb::after {
+  border-width: 2px 0 2px 0 !important;
+}
+.hb-lr::after {
+  border-width: 0 2px 0 2px !important;
+}
+.nhb,
+.nhb::after {
+  border-width: 0 !important;
+}
+.brc-f {
+  border-color: #fff !important;
+}
+.brc-f1 {
+  border-color: #f1f1f1 !important;
+}
+.brc-e1 {
+  border-color: #e1e1e1 !important;
+}
+.brc-d1 {
+  border-color: #d1d1d1 !important;
+}
+.brc-a1 {
+  border-color: #a1a1a1 !important;
+}
+.brc-91 {
+  border-color: #919191 !important;
+}
+.brc-m {
+  border-color: #19acee /* 主颜色 */ !important;
+}

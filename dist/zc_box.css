@@ -1,0 +1,83 @@
+.box {
+/*盒子模型*/
+/*默认横排*/
+  display: -webkit-flex !important;
+  display: flex !important;
+  position: relative;
+}
+.box-col {
+/*竖排*/
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.box-wp {
+/*超出换行*/
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.box-ac {
+/*垂直居中对齐 */
+  -webkit-align-items: center;
+  align-items: center;
+}
+.box-ae {
+/*垂直下对齐 */
+  -webkit-align-items: end;
+  align-items: end;
+}
+.box-jc {
+/*居中对齐 */
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.box-je {
+/*右对齐 */
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.box-jsb {
+/*左右对齐 */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.box-jsa {
+/*左右居中对齐*/
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.box-f1 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.box-f2 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 2;
+  flex: 2;
+}
+.box-f3 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 3;
+  flex: 3;
+}
+.box-f4 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 4;
+  flex: 4;
+}
+.box-f5 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 5;
+  flex: 5;
+}
+.box-f6 {
+/*占的份数*/
+  position: relative;
+  -webkit-flex: 6;
+  flex: 6;
+}

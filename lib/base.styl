@@ -1,0 +1,18 @@
+$us=px,rem,vw,vh,vmin,vmax //宽度单位
+$u=1 //当前单位是
+
+$mColor=#19acee /* 主颜色 */
+$sColor=#2667ec /* 辅颜色 */
+$erColor=#eb3a04 /* 错误颜色 */
+$blue=#1babee /* 蓝调 */
+$yellow=#ff8a00 /* 黄调 */
+$green=#11998e/* 绿调 */
+$mbg=#f2f3f4/* 背景底色 */
+
+//值加单位
+un(v,un=$us[$u])
+    return v!=0?unit(v,un):v
+
+//rem单位自动除10倍
+isrem(gs)
+   return $u==0?un(gs):un(gs/10)
