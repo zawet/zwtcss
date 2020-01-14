@@ -46,6 +46,96 @@
 .ba-mbg {
   background: #f2f3f4 /* 背景底色 */;
 }
+.co-1 {
+  color: #111;
+}
+.co-3 {
+  color: #333;
+}
+.co-5 {
+  color: #535353;
+}
+.co-6 {
+  color: #666;
+}
+.co-7 {
+  color: #777;
+}
+.co-9 {
+  color: #999;
+}
+.co-a {
+  color: #aaa;
+}
+.co-d {
+  color: #ddd;
+}
+.co-e {
+  color: #eee;
+}
+.co-e1 {
+  color: #e1e2e9;
+}
+.co-f9 {
+  color: #f9f9f9;
+}
+.co-f6 {
+  color: #f6f6f6;
+}
+.co-f3 {
+  color: #f3f3f3;
+}
+.co-f1 {
+  color: #f1f1f1;
+}
+.co-fa {
+  color: #fafafa;
+}
+.ba-1 {
+  background: #111;
+}
+.ba-3 {
+  background: #333;
+}
+.ba-5 {
+  background: #535353;
+}
+.ba-6 {
+  background: #666;
+}
+.ba-7 {
+  background: #777;
+}
+.ba-9 {
+  background: #999;
+}
+.ba-a {
+  background: #aaa;
+}
+.ba-d {
+  background: #ddd;
+}
+.ba-e {
+  background: #eee;
+}
+.ba-e1 {
+  background: #e1e2e9;
+}
+.ba-f9 {
+  background: #f9f9f9;
+}
+.ba-f6 {
+  background: #f6f6f6;
+}
+.ba-f3 {
+  background: #f3f3f3;
+}
+.ba-f1 {
+  background: #f1f1f1;
+}
+.ba-fa {
+  background: #fafafa;
+}
 .cli-m {
   background-image: -webkit-linear-gradient(3deg, #2667ec, #19acee);
   -webkit-background-clip: text;

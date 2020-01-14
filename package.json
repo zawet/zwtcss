@@ -1,6 +1,6 @@
 {
   "name": "zwtcss",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "预备css样式",
   "main": "index.js",
   "dependencies": {
