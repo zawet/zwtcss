@@ -1,26 +1,26 @@
 .co-m {
-  background: #19acee /* 主颜色 */;
+  color: #19acee /* 主颜色 */;
 }
 .co-s {
-  background: #2667ec /* 辅颜色 */;
+  color: #2667ec /* 辅颜色 */;
 }
 .co-er {
-  background: #eb3a04 /* 错误颜色 */;
+  color: #eb3a04 /* 错误颜色 */;
 }
 .co-b {
-  background: #1babee /* 蓝调 */;
+  color: #1babee /* 蓝调 */;
 }
 .co-y {
-  background: #ff8a00 /* 黄调 */;
+  color: #ff8a00 /* 黄调 */;
 }
 .co-g {
-  background: #11998e /* 绿调 */;
+  color: #11998e /* 绿调 */;
 }
 .co-f {
-  background: #fff;
+  color: #fff;
 }
 .co-mbg {
-  background: #f2f3f4 /* 背景底色 */;
+  color: #f2f3f4 /* 背景底色 */;
 }
 .ba-m {
   background: #19acee /* 主颜色 */;
@@ -45,63 +45,6 @@
 }
 .ba-mbg {
   background: #f2f3f4 /* 背景底色 */;
-}
-.co-1 {
-  background: #111;
-}
-.co-3 {
-  background: #333;
-}
-.co-5 {
-  background: #535353;
-}
-.co-6 {
-  background: #666;
-}
-.co-7 {
-  background: #777;
-}
-.co-9 {
-  background: #999;
-}
-.co-a {
-  background: #aaa;
-}
-.co-d {
-  background: #ddd;
-}
-.co-f9 {
-  background: #f9f9f9;
-}
-.co-f6 {
-  background: #f6f6f6;
-}
-.co-f3 {
-  background: #f3f3f3;
-}
-.co-f1 {
-  background: #f1f1f1;
-}
-.ba-fa {
-  background: #fafafa;
-}
-.ba-f9 {
-  background: #f9f9f9;
-}
-.ba-f6 {
-  background: #f6f6f6;
-}
-.ba-f3 {
-  background: #f3f3f3;
-}
-.ba-f1 {
-  background: #f1f1f1;
-}
-.ba-e {
-  background: #eee;
-}
-.ba-e1 {
-  background: #e1e2e9;
 }
 .cli-m {
   background-image: -webkit-linear-gradient(3deg, #2667ec, #19acee);

@@ -3,7 +3,7 @@
 //$gear=0,2,4,5,6,8,10,12,14,15,16,18,20,25,30
 $gear=0,5,10,15,20,25,30
 $type=a,tb,lr,t,b,l,r
-$bj=p,m
+$bj=(p padding) (m margin)
 tyformat(ty,g,iao)
     if ty=='a'
         {iao}:isrem(g) 
@@ -29,5 +29,5 @@ pm(gear=$gear,type=$type,bj=$bj)
     for iao in bj
         for ty in type
             for g in gear
-                .{iao}{ty}-{g}
-                    tyformat(ty,g,iao=='p'?'padding':'margin')
+                .{iao[0]}{ty}-{g}
+                    tyformat(ty,g,iao[1])
