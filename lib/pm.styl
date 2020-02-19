@@ -1,18 +1,22 @@
 
 //内外边距映射
-//$gear=0,2,4,5,6,8,10,12,14,15,16,18,20,25,30
-$gear=0,5,10,15,20,25,30
+//偶数+5倍数
+$gear=0,2,4,5,6,8,10,12,14,15,16,18,20,22,24,25,26,28,30 
+//5倍数
+//$gear=0,5,10,15,20,25,30
+//偶数
+//$gear=0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30 
 $type=a,tb,lr,t,b,l,r
 $bj=(p padding) (m margin)
 tyformat(ty,g,iao)
     if ty=='a'
-        {iao}:isrem(g) 
+        {iao}:isrem(g)  !important
     else if ty=='tb'
-        {iao}-top:isrem(g) 
-        {iao}-bottom:isrem(g)
+        {iao}-top:isrem(g) !important 
+        {iao}-bottom:isrem(g) !important
     else if ty=='lr'
-        {iao}-left:isrem(g) 
-        {iao}-right:isrem(g)
+        {iao}-left:isrem(g) !important
+        {iao}-right:isrem(g) !important
     else if ty=='t'
         {iao}-top:isrem(g) !important
     else if ty=='b'

@@ -1,4 +1,4 @@
-$fzs=8,9,10,12,14,16,18,20,22,24,26,28,30,40,50,60
+$fzs=8,9,10,11,12,13,14,15,16,18,20,22,24,26,28,30,40,50,60
 foz(size=$fzs)
     for sz in size
         .fz{sz}
@@ -14,23 +14,23 @@ fz()
     .dian3
         overflow:hidden
         text-overflow:ellipsis
-        white-space:nowrap
+        white-space:nowrap 
     
     /*行块级变化*/
     .block
-        display: block
+        display: block !important
     .none
-        display: none
+        display: none !important
     .inblock
-        display: inline-block
+        display: inline-block !important
 
     /*内边距和边框算在宽高里*/
     .bs-bb
-        box-sizing: border-box
+        box-sizing: border-box !important
     
     /*手指鼠标*/
     .cu-p
-        cursor: pointer
+        cursor: pointer !important
 
     /*去除A标签下横线*/
     .ounl
@@ -38,11 +38,11 @@ fz()
 
     /*文字对齐*/
     .tl
-        text-align: left
+        text-align: left !important
     .tc
-        text-align: center
+        text-align: center !important
     .tr
-        text-align: right
+        text-align: right !important
 
     /*浮动模型*/
     .fl

@@ -7,11 +7,20 @@
 .fz10 {
   font-size: 1rem !important;
 }
+.fz11 {
+  font-size: 1.1rem !important;
+}
 .fz12 {
   font-size: 1.2rem !important;
 }
+.fz13 {
+  font-size: 1.3rem !important;
+}
 .fz14 {
   font-size: 1.4rem !important;
+}
+.fz15 {
+  font-size: 1.5rem !important;
 }
 .fz16 {
   font-size: 1.6rem !important;
@@ -60,21 +69,21 @@
 }
 /*行块级变化*/
 .block {
-  display: block;
+  display: block !important;
 }
 .none {
-  display: none;
+  display: none !important;
 }
 .inblock {
-  display: inline-block;
+  display: inline-block !important;
 }
 /*内边距和边框算在宽高里*/
 .bs-bb {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 /*手指鼠标*/
 .cu-p {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 /*去除A标签下横线*/
 .ounl {
@@ -82,13 +91,13 @@
 }
 /*文字对齐*/
 .tl {
-  text-align: left;
+  text-align: left !important;
 }
 .tc {
-  text-align: center;
+  text-align: center !important;
 }
 .tr {
-  text-align: right;
+  text-align: right !important;
 }
 /*浮动模型*/
 .fl {
