@@ -13,6 +13,7 @@ fxfun(fxt=$fx)
 brcolorfun(brc=$brcolor)
     for bc in brc
         .brc-{bc[0]}
+        .brc-{bc[0]}::after
             border-color:bc[1] !important;  
 
 br()
@@ -31,7 +32,7 @@ br()
             height: 200%
             left: 0
             top: 0
-            border:2px solid rgb(212, 215, 221)
+            border:1px solid rgb(212, 215, 221)
             transform: scale(0.5)
             -webkit-transform: scale(0.5)
             -webkit-transform-origin: 0 0
